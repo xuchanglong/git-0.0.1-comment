@@ -14,6 +14,10 @@ git-0.0.1-comment
 >进入 git-0.0.1 目录，执行 make 指令即可。
 ### 二、依赖库
    openssl zlib
+### 三、使用方法
+|v2.23.0| v0.01|
+|---|---
+|git init| init-db
 ### 三、更新日志
 >### 1、2020-10-10
    * 更新 makefile，使之支持 openssl 1.1.1 版本。

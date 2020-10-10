@@ -233,6 +233,7 @@ int read_cache(void)
 		return error("no access to SHA1 file directory");
 	fd = open(".dircache/index", O_RDONLY);
 	if (fd < 0)
+		// 区分该路径是不存在还是打开失败。
 		return (errno == ENOENT) ? 0 : error("open failed");
 
 	map = (void *)-1;
